@@ -32,7 +32,7 @@ import usb.core
 import usb.util
 import usb.control
 
-from ant.core.exceptions import DriverError
+from antw.core.exceptions import DriverError
 
 from array import *
 
