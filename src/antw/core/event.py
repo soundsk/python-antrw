@@ -34,9 +34,9 @@ MAX_MSG_QUEUE = 25
 import thread
 import time
 
-from ant.core.constants import *
-from ant.core.message import Message, ChannelEventMessage
-from ant.core.exceptions import MessageError
+from antw.core.constants import *
+from antw.core.message import Message, ChannelEventMessage
+from antw.core.exceptions import MessageError
 
 
 def ProcessBuffer(buffer_):

@@ -25,8 +25,8 @@
 
 import struct
 
-from ant.core.exceptions import MessageError
-from ant.core.constants import *
+from antw.core.exceptions import MessageError
+from antw.core.constants import *
 
 
 class Message(object):

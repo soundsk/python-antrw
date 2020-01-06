@@ -27,10 +27,10 @@ import time
 import thread
 import uuid
 
-from ant.core.constants import *
-from ant.core.exceptions import *
-from ant.core import message
-from ant.core import event
+from antw.core.constants import *
+from antw.core.exceptions import *
+from antw.core import message
+from antw.core import event
 
 
 class NetworkKey(object):
