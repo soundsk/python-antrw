@@ -209,8 +209,15 @@ class ChannelIDMessage(ChannelMessage):
         return unpack(b'<H', bytes(self._payload[1:3]))[0]
     @deviceNumber.setter
     def deviceNumber(self, device_number):
-        self._payload[1:3] = pack(b'<H', device_number)
+        if len(str(device_number)) > 3 :
+            self._payload[1:3] = pack(b'<H', device_number)
+        else :
+            self._payload[1:3] = pack(b'<xxH', device_number)
 
+        
+        
+        
+        
     @property
     def deviceType(self):
         return self._payload[3]
